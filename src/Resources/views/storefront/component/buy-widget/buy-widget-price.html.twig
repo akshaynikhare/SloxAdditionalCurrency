@@ -1,0 +1,27 @@
+{% sw_extends '@Storefront/storefront/component/buy-widget/buy-widget-price.html.twig' %}
+
+
+{% block buy_widget_price_content %}
+{{ parent() }}
+
+
+{% if context.extensions.additional_currency.currency is defined %}
+    {% set additionalCurrentCurrency = context.extensions.additional_currency.currency %}
+{% endif %}
+
+{% if context.extensions.additional_currency.additionalList is defined %}
+    {% set additionalCurrentList = context.extensions.additional_currency.additionalList %}
+{% endif %}
+
+
+
+{% if additionalCurrentCurrency is defined && additionalCurrentList is defined %}
+    <span class="product-detail-list-price-wrapper">
+        <span class="additional-currency">
+        {{context.extensions.additional_currency.currenciesSymbol[additionalCurrentCurrency]}}  {{ (price.unitPrice * additionalCurrentList[additionalCurrentCurrency] )|number_format(2) }}
+        </span>
+    </span>
+{% endif %}
+
+{% endblock %}
+

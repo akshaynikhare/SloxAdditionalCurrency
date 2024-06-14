@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>General</title>
+        <input-field type="url">
+            <name>currencyImportUrl</name>
+            <label>Currency Import URL</label>
+            <copyable>true</copyable>
+            <defaultValue>https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml</defaultValue>
+        </input-field>
+        <input-field type="datetime">
+            <name>lastUpdate</name>
+            <label>last Updated</label>
+            <disabled>true</disabled>
+        </input-field>
+        <input-field type="text">
+            <name>DefaultCurrecny</name>
+            <label>Default Currecny</label>
+            <defaultValue>€</defaultValue>
+           <disabled>true</disabled>
+        </input-field>
+
+    </card>
+    <card>
+        <title>Conversion Rates</title>
+        <input-field type="float">
+            <name>euroTOusd</name>
+            <label>conversion rate euro to usd </label>
+            <defaultValue>1.0765</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOjpy</name>
+            <label>conversion rate euro to jpy </label>
+            <defaultValue>169.35</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTObgn</name>
+            <label>conversion rate euro to bgn </label>
+            <defaultValue>1.9558</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOczk</name>
+            <label>conversion rate euro to czk </label>
+            <defaultValue>24.686</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOdkk</name>
+            <label>conversion rate euro to dkk </label>
+            <defaultValue>7.4588</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOgbp</name>
+            <label>conversion rate euro to gbp </label>
+            <defaultValue>0.84365</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOhuf</name>
+            <label>conversion rate euro to huf </label>
+            <defaultValue>395.28</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOpln</name>
+            <label>conversion rate euro to pln </label>
+            <defaultValue>4.3385</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOron</name>
+            <label>conversion rate euro to ron </label>
+            <defaultValue>4.9768</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOsek</name>
+            <label>conversion rate euro to sek </label>
+            <defaultValue>11.2345</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOchf</name>
+            <label>conversion rate euro to chf </label>
+            <defaultValue>0.9641</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOisk</name>
+            <label>conversion rate euro to isk </label>
+            <defaultValue>149.50</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOnok</name>
+            <label>conversion rate euro to nok </label>
+            <defaultValue>11.4675</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOtry</name>
+            <label>conversion rate euro to try </label>
+            <defaultValue>34.8563</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOaud</name>
+            <label>conversion rate euro to aud </label>
+            <defaultValue>1.6280</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTObrl</name>
+            <label>conversion rate euro to brl </label>
+            <defaultValue>5.7912</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOcad</name>
+            <label>conversion rate euro to cad </label>
+            <defaultValue>1.4795</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOcny</name>
+            <label>conversion rate euro to cny </label>
+            <defaultValue>7.8086</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOhkd</name>
+            <label>conversion rate euro to hkd </label>
+            <defaultValue>8.4082</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOidr</name>
+            <label>conversion rate euro to idr </label>
+            <defaultValue>17552.60</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOils</name>
+            <label>conversion rate euro to ils </label>
+            <defaultValue>3.9902</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOinr</name>
+            <label>conversion rate euro to inr </label>
+            <defaultValue>89.9490</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOkrw</name>
+            <label>conversion rate euro to krw </label>
+            <defaultValue>1481.35</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOmxn</name>
+            <label>conversion rate euro to mxn </label>
+            <defaultValue>20.2743</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOmyr</name>
+            <label>conversion rate euro to myr </label>
+            <defaultValue>5.0784</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOnzd</name>
+            <label>conversion rate euro to nzd </label>
+            <defaultValue>1.7528</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOphp</name>
+            <label>conversion rate euro to php </label>
+            <defaultValue>63.094</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOsgd</name>
+            <label>conversion rate euro to sgd </label>
+            <defaultValue>1.4553</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOthb</name>
+            <label>conversion rate euro to thb </label>
+            <defaultValue>39.475</defaultValue>
+        </input-field>
+        <input-field type="float">
+            <name>euroTOzar</name>
+            <label>conversion rate euro to zar </label>
+            <defaultValue>20.0486</defaultValue>
+        </input-field>
+        
+    </card>
+
+</config>

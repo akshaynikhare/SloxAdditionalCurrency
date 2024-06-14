@@ -1,0 +1,31 @@
+{% sw_extends '@Storefront/storefront/component/line-item/element/total-price.html.twig' %}
+
+{% block component_line_item_total_price_value %}
+{% if context.extensions.additional_currency.currency is defined %}
+    {% set additionalCurrentCurrency = context.extensions.additional_currency.currency %}
+{% endif %}
+
+{% if context.extensions.additional_currency.additionalList is defined %}
+    {% set additionalCurrentList = context.extensions.additional_currency.additionalList %}
+{% endif %}
+
+
+    <div class="line-item-total-price-value">
+        {# Shipping costs discounts always have a price of 0, which might be confusing, therefore we do not show those #}
+        {% if lineItem.payload.discountScope != 'delivery' %}
+            {{ lineItem.price.totalPrice|currency }}{{ 'general.star'|trans|sw_sanitize }}
+            <br>
+            <small style="font-weight: lighter;" >
+                {{ context.extensions.additional_currency.currenciesSymbol[additionalCurrentCurrency]}}  {{ (lineItem.price.totalPrice * additionalCurrentList[additionalCurrentCurrency] )|number_format(2) }} {{ 'general.star'|trans|sw_sanitize }}
+            </small>
+        {% endif %}
+
+        {% set referencePrice = lineItem.price.referencePrice %}
+        {% if referencePrice is not null and displayMode == 'offcanvas' %}
+            <br>
+            <small class="line-item-reference-price">
+                ({{ referencePrice.price|currency }}{{ 'general.star'|trans|sw_sanitize }} / {{ referencePrice.referenceUnit }}&nbsp;{{ referencePrice.unitName }})
+            </small>
+        {% endif %}
+    </div>
+{% endblock %}

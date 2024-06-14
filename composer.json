@@ -1,0 +1,33 @@
+{
+    "name": "slox-additional-currency/slox-additional-currency",
+    "description": "slox-additional-currency/slox-additional-currency",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "SloxAdditionalCurrency\\SloxAdditionalCurrency",
+        "plugin-icon": "icon.png",
+        "label": {
+            "de-DE": "Zeigt zusätzliche Währungen an",
+            "en-GB": "Displays Additional currencies"
+        },
+        "description": {
+            "de-DE": "Dieses Plugin zeigt zusätzliche Währungen im Shopfront an.",
+            "en-GB": "This plugin displays additional currencies on the storefront."
+        }
+
+    },
+    "autoload": {
+        "psr-4": {
+            "SloxAdditionalCurrency\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SloxAdditionalCurrency\\Tests\\": "tests/"
+        }
+    }
+}
